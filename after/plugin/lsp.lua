@@ -1,6 +1,6 @@
 local lsp_zero = require('lsp-zero')
 
-lsp_zero.setup_servers({'lua_ls', 'arduino_language_server', 'java_language_server', 'pyright'})
+lsp_zero.setup_servers({'lua_ls', 'arduino_language_server', 'jdtls', 'pyright'})
 
 lsp_zero.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
