@@ -6,6 +6,8 @@ Althought I don't utilize Tmux in favor of Yakuake with difrent sessions in it.
 
 ### Languages ###
 - Python is fully supported ( Venv with all used libraries active is required as one can imagine )
-- Java - I have managed to install LSP and Formatter. archlinux-java and SDKMAN! is needed.:w
+- Java - I have managed to install LSP and Formatter. archlinux-java and SDKMAN! is needed.
+
+* Java * jdtls seems to have very strict rules when it comes to showing things from gradle libs.
 
 
