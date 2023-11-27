@@ -68,4 +68,7 @@ local config = {
 }
 -- This starts a new client & server,
 -- or attaches to an existing client & server depending on the `root_dir`.
+
+-- Remap for some getters and setters, hopefully.
+vim.keymap.set({ 'n', 'v' }, '<leader>la', vim.lsp.buf.code_action, { desc = 'Actions' })
 require('jdtls').start_or_attach(config)
