@@ -24,6 +24,12 @@ require("lazy").setup({
         as = "catppuccin",
     },
     {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+},
+    {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     },

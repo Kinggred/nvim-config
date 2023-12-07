@@ -1,6 +1,6 @@
 local lsp_zero = require('lsp-zero')
 
-lsp_zero.setup_servers({ 'lua_ls', 'arduino_language_server', 'pyright' })
+lsp_zero.setup_servers({ 'lua_ls', 'arduino_language_server' })
 
 lsp_zero.on_attach(function(client, bufnr)
     -- see :help lsp-zero-keybindings
@@ -10,7 +10,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'lua_ls', 'arduino_language_server', 'pyright' },
+    ensure_installed = { 'lua_ls', 'arduino_language_server' },
     handlers = {
         lsp_zero.default_setup,
         lua_ls = function()

@@ -7,7 +7,7 @@ local sources = {
 	formatting.black,
 	formatting.isort,
 	formatting.stylua,
-    	formatting.google_java_format,
+    formatting.clang_format
 }
 
 null_ls.setup({
