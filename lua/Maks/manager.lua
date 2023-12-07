@@ -21,7 +21,6 @@ require("lazy").setup({
     },
     {
         "catppuccin/nvim",
-        as = "catppuccin",
     },
     {
   "folke/tokyonight.nvim",
@@ -31,7 +30,6 @@ require("lazy").setup({
 },
     {
         "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
     },
     {
         "ThePrimeagen/harpoon",
