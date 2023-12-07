@@ -7,10 +7,10 @@ Althought I don't utilize Tmux in favor of Yakuake with difrent sessions in it.
 |Language|Status|Additional|
 |---|:---:|---|
 |Python|Full|Works great, requires proper venv|
-|Java|Full|Linting and sudgestions work most of the time, `jdtls` does like to hang sometimes  seems to help.|
+|Java|Full|Linting and sudgestions works most of the time, `jdtls` does like to throw an occasional tantrum|
 
 ## Tips ##
 
- - ':write | edit | TSBufEnable highlight': Does help when 'treesitter' shits itself. Also seems to help with autoformatting.
- - ':JdtWipeDataAndRestart': Helps 'jdtls' see new packages.
- - 'rm -rf ~/.cache/jdtls/project-name' Can get 'jdtls' unstuck if it's throwing exception 13. 
+ - `:write | edit | TSBufEnable highlight`: Does help when `treesitter` shits itself. Also seems to help with autoformatting.
+ - `:JdtWipeDataAndRestart`: Helps `jdtls` see new packages.
+ - `rm -rf ~/.cache/jdtls/project-name` Can get `jdtls` unstuck if it's throwing exception 13. 
