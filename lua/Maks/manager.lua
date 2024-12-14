@@ -88,7 +88,9 @@ require("lazy").setup({
 	{
 		"fatih/vim-go",
 	},
-    {
-        "neoclide/coc.nvim", build = "npm install"
-    },
+	{
+		"neoclide/coc.nvim",
+		branch = "release",
+		build = "npm install",
+	},
 })
