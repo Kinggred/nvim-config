@@ -14,3 +14,8 @@ Althought I don't utilize Tmux in favor of Yakuake with difrent sessions in it.
  - `:write | edit | TSBufEnable highlight`: Does help when `treesitter` shits itself. Also seems to help with autoformatting.
  - `:JdtWipeDataAndRestart`: Helps `jdtls` see new packages.
  - `rm -rf ~/.cache/jdtls/project-name` Can get `jdtls` unstuck if it's throwing exception 13. 
+
+## Problems ##
+Updating the packages can, and sometimes will break features.
+Unfortunately whole linting and sudgestions require refactor as there were major changes.
+For now made it work, but there are 3 separate sudgestion windows poping up.
