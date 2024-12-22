@@ -1,3 +1,4 @@
+--[[
 local lsp_zero = require("lsp-zero")
 
 lsp_zero.setup_servers({ "lua_ls", "arduino_language_server" })
@@ -37,3 +38,4 @@ cmp.setup({
 		["<S-Tab>"] = cmp_action.luasnip_shift_supertab(),
 	}),
 })
+]]

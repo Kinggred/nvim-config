@@ -12,31 +12,25 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	-- DEPENDENCIES --
 	{
 		"nvim-lua/plenary.nvim",
 	},
 	{
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.4",
-	},
-	{
-		"catppuccin/nvim",
-	},
-	{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
-	},
-	{
 		"nvim-treesitter/nvim-treesitter",
 	},
+	-- MOVEMENT --
 	{
-		"ThePrimeagen/harpoon",
+		"nvim-telescope/telescope.nvim", -- Search for file
 	},
 	{
-		"mbbill/undotree",
+		"ThePrimeagen/harpoon", -- Jump to file
 	},
+	-- THEMES --
+	{
+		"folke/tokyonight.nvim",
+	},
+	-- LSP --
 	{
 		"neovim/nvim-lspconfig",
 	},
@@ -44,7 +38,10 @@ require("lazy").setup({
 		"hrsh7th/nvim-cmp",
 	},
 	{
-		"hrsh7th/cmp-nvim-lsp",
+		"williamboman/mason.nvim",
+	},
+	{
+		"williamboman/mason-lspconfig.nvim",
 	},
 	{
 		"hrsh7th/cmp-buffer",
@@ -55,79 +52,34 @@ require("lazy").setup({
 	{
 		"hrsh7th/cmp-nvim-lua",
 	},
+	-- -- Language Specific -- --
+	-- Python --
+	-- Java --
 	{
-		"L3MON4D3/LuaSnip",
+		-- "georgewfraser/java-language-server",
 	},
 	{
-		"VonHeikemen/lsp-zero.nvim",
+		--"mfussenegger/nvim-jdtls",
 	},
-	{
-		"williamboman/mason.nvim",
-	},
-	{
-		"williamboman/mason-lspconfig.nvim",
-	},
-	{
-		"nvimtools/none-ls.nvim",
-	},
-	{
-		"georgewfraser/java-language-server",
-	},
-	{
-		"m4xshen/autoclose.nvim",
-	},
+	-- Golang --
+	-- QOL --
 	{
 		"nvim-treesitter/nvim-treesitter-context",
+	},
+	{
+		"mbbill/undotree", -- Essentially an file change history
+	},
+	{
+		"m4xshen/autoclose.nvim", -- Self close brackets etc.
 	},
 	{
 		"lewis6991/gitsigns.nvim",
 	},
 	{
-		"mfussenegger/nvim-jdtls",
+		"folke/trouble.nvim", -- Diplay full errors
 	},
 	{
-		"fatih/vim-go",
+		"L3MON4D3/LuaSnip", -- Snippets
 	},
-	{
-		"neoclide/coc.nvim",
-		branch = "release",
-		build = "npm install",
-	},
-    {
-  "folke/trouble.nvim",
-  opts = {}, -- for default options, refer to the configuration section for custom setup.
-  cmd = "Trouble",
-  keys = {
-    {
-      "<leader>xx",
-      "<cmd>Trouble diagnostics toggle<cr>",
-      desc = "Diagnostics (Trouble)",
-    },
-    {
-      "<leader>xX",
-      "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
-      desc = "Buffer Diagnostics (Trouble)",
-    },
-    {
-      "<leader>cs",
-      "<cmd>Trouble symbols toggle focus=false<cr>",
-      desc = "Symbols (Trouble)",
-    },
-    {
-      "<leader>cl",
-      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
-      desc = "LSP Definitions / references / ... (Trouble)",
-    },
-    {
-      "<leader>xL",
-      "<cmd>Trouble loclist toggle<cr>",
-      desc = "Location List (Trouble)",
-    },
-    {
-      "<leader>xQ",
-      "<cmd>Trouble qflist toggle<cr>",
-      desc = "Quickfix List (Trouble)",
-    },
-  },
-}
+	-- OTHER --
 })

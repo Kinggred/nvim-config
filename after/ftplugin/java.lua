@@ -1,3 +1,4 @@
+--[[
 local fn = vim.fn
 local root_dir = require("jdtls.setup").find_root({ ".git", "mvnw", "gradlew" })
 local home = os.getenv("HOME")
@@ -44,3 +45,4 @@ config = {
 vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "Actions" })
 
 require("jdtls").start_or_attach(config)
+]]
