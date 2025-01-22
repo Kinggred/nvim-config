@@ -19,6 +19,9 @@ require("lazy").setup({
 	{
 		"nvim-treesitter/nvim-treesitter",
 	},
+    {
+        "antosha417/nvim-lsp-file-operations",
+    },
 	-- MOVEMENT --
 	{
 		"nvim-telescope/telescope.nvim", -- Search for file
@@ -32,10 +35,22 @@ require("lazy").setup({
 	},
 	-- LSP --
 	{
-		"neovim/nvim-lspconfig",
+		"hrsh7th/nvim-cmp",
+	},
+    {
+        "hrsh7th/cmp-path",
+    },
+	{
+		"hrsh7th/cmp-buffer",
 	},
 	{
-		"hrsh7th/nvim-cmp",
+		"neovim/nvim-lspconfig",
+	},
+    {
+        'hrsh7th/cmp-nvim-lsp',
+    },
+    {
+		"hrsh7th/cmp-nvim-lua",
 	},
 	{
 		"williamboman/mason.nvim",
@@ -43,15 +58,13 @@ require("lazy").setup({
 	{
 		"williamboman/mason-lspconfig.nvim",
 	},
-	{
-		"hrsh7th/cmp-buffer",
-	},
-	{
-		"hrsh7th/cmp-path",
-	},
-	{
-		"hrsh7th/cmp-nvim-lua",
-	},
+    {
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+    },
+    {
+        "ray-x/lsp_signature.nvim",
+        event = "VeryLazy",
+    },
 	-- -- Language Specific -- --
 	-- Python --
 	-- Java --
@@ -69,9 +82,9 @@ require("lazy").setup({
 	{
 		"mbbill/undotree", -- Essentially an file change history
 	},
-	{
-		"m4xshen/autoclose.nvim", -- Self close brackets etc.
-	},
+	--{
+	--	"m4xshen/autoclose.nvim", -- Self close brackets etc.
+	--},
 	{
 		"lewis6991/gitsigns.nvim",
 	},
@@ -81,5 +94,9 @@ require("lazy").setup({
 	{
 		"L3MON4D3/LuaSnip", -- Snippets
 	},
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+    },
 	-- OTHER --
 })
